@@ -65,6 +65,7 @@
       background: #e63946;
       color: white;
       box-shadow: 0 0 10px #e63946;
+      position: fixed; /* 🔥 para funcionar no script */
     }
 
     /* container para calendário e imagem */
@@ -114,7 +115,7 @@
       <label for="data">Escolha a data:</label>
       <input type="date" id="data" name="data">
     </div>
-    <img src="fig01.jpg" alt="Imagem Rock">
+    <img src="fig01.jgp" alt="Imagem Rock"> <!-- 🔥 ajuste extensão -->
   </div>
 
   <script>
@@ -128,7 +129,6 @@
       const randomX = Math.floor(Math.random() * maxX);
       const randomY = Math.floor(Math.random() * maxY);
 
-      btnNao.style.position = "fixed";
       btnNao.style.left = `${randomX}px`;
       btnNao.style.top = `${randomY}px`;
     }
